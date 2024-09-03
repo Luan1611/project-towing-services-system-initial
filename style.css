@@ -3,7 +3,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper {
+.internal-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
