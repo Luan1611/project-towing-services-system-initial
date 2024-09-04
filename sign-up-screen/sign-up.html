@@ -8,11 +8,11 @@
     <h1>Cadastro</h1>
     <form>
         <label>Dados pessoais</label>
-        <input type="text" name="user-name" placeholder="Nome Completo" required>
-        <input type="text" name="user-cpf" placeholder="CPF" required>
+        <input type="text" name="user-name" placeholder="Nome Completo">
+        <input type="text" name="user-cpf" placeholder="CPF">
         
         <label>Endereço</label>
-        <input type="text" name="user-cep" placeholder="CEP" required>
+        <input type="text" name="user-cep" placeholder="CEP">
         <input type="text" name="user-neighborhood" placeholder="Bairro">
         <select id="UF" name="UF">
             <option value="">Selecione um Estado</option>
@@ -48,14 +48,17 @@
         <input type="text" name="user-number" placeholder="Número">
 
         <label>Contatos</label>
-        <input type="text" name="user-email" placeholder="E-mail" required>
-        <input type="text" name="user-phone" placeholder="Telefone" required>
-        <button>+</button>
+        <input type="text" name="user-email" placeholder="E-mail">
+        <input type="text" name="user-phone-1" placeholder="Telefone">
+
+        <button type="button" id="phone-add-bt">+</button>
 
         <label>Senha</label>
         <input type="password" name="user-password" placeholder="password">
 
         <button>Realizar cadastro</button>
     </form>
+
+    <script src="sign-up.js"></script>
 </body>
 </html>
