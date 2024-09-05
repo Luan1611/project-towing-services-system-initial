@@ -3,6 +3,10 @@
     font-family: monospace;
 }
 
+body {
+    background-color: rgb(235, 241, 241);
+}
+
 .external-container {
     width: 100vw;
     height: 100vh;
