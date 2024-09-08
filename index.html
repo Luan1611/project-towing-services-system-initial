@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Serviços de Guincho</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <title>Serviços de Guincho</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-        <header>
-            <h1>Serviço de Guincho San Charles</h1>
+    <header>
+        <h1>Guincho San Charles</h1>
+        <div class="login-container">
+            <!-- Todo: deixar botão fixo na tela (não sumir com o scroll) -->
+            <a href="./sign-in-screen/sign-in.html">
+                <button>Login</button>
+            </a>
+        </div>
+    </header>
 
-            <div class="login-container">
-                <!-- Todo: deixar botão fixo na tela (não sumir com o scroll) -->
-                <a href="./sign-in-screen/sign-in.html">
-                    <button>Login</button>
-                </a>
-            </div>
-        </header>
+    <a href="https://wa.link/wz4jy8">
+        <img class="zapzap" src="./assets/icons-correct/ZAPZAP 1zapzap.png">
+    </a>
+   
+    <main>
+        <div class="left" contenteditable>
+            Left Sidebar
+          </div>
+        <div class="main-content-container">
 
-        <main>
-            <div class="main-content-container">
+            <div class="assets-container">
 
-                <div class="assets-container">
-    
-                    <div class="images-container">
-                        <img width="720" height="380" src="./assets/images/guincho01.jpg">
-                    </div>
-
-                    <div class="icons-container">
-                            <img src="./assets/icons-correct/Group 12easy-payment.png">
-                            <img src="./assets/icons-correct/Group 14evaluations.png">
-                            <img src="./assets/icons-correct/Group 2better-price.png">
-                            <img class="big" src="./assets/icons-correct/Group 6service.png">
-                            <img class="big" src="./assets/icons-correct/Group 7transports.png">
-                            <img class="big" src="./assets/icons-correct/Group 8satisfaction.png">
-                            <img class="big" src="./assets/icons-correct/Group 9suport.png">
-                    </div>
-        
+                <div class="images-container">
+                    <img width="720" height="380" src="./assets/images/guincho01.jpg">
                 </div>
-    
+
+                <div class="icons-container">
+                    <div class="square-icons">
+                        <img src="./assets/icons-correct/Group 12easy-payment.png">
+                        <img src="./assets/icons-correct/Group 14evaluations.png">
+                        <img src="./assets/icons-correct/Group 2better-price.png">
+                    </div>
+                    <div class="big-icons">
+                        <img class="big" src="./assets/icons-correct/Group 6service.png">
+                        <img class="big" src="./assets/icons-correct/Group 7transports.png">
+                        <img class="big" src="./assets/icons-correct/Group 8satisfaction.png">
+                        <img class="big" src="./assets/icons-correct/Group 9suport.png">
+                    </div>
+                </div>
                 <div class="schedulings-container">
-                    
-                </div>
-
-                <a href="./sign-in-screen/sign-in.html">
-                    <button>Agende seus serviços aqui</button>
-                </a>
                 
+                </div>
+                <a href="./sign-in-screen/sign-in.html">
+                    <button class="agendamento">AGENDE SEUS SERVIÇOS AQUI</button>
+                </a>
             </div>
-        </main>
+        </div>
+        <div class="right" contenteditable>
+            Right Sidebar
+          </div>
 
-        <!-- TODO: fazer rodapé (será o mesmo para todas as páginas) -->
-        <footer>
+    </main>
 
-        </footer>
+    <!-- TODO: fazer rodapé (será o mesmo para todas as páginas) -->
+    <footer>
 
-        <script type="module" src="./app.js"></script>
-        <script type="module" src="./list.js"></script>
-    </body>
+    </footer>
+
+    <script type="module" src="./app.js"></script>
+    <script type="module" src="./list.js"></script>
+</body>
 </html>

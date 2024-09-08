@@ -1,19 +1,41 @@
 * {
     box-sizing: border-box;
     font-family: monospace;
+    background-color: rgb(235, 241, 241);;
 }
 
-body {
-    /* background-color: rgb(235, 241, 241); */
-    background-color: green;
+main{
+    display: flex;
 }
 
-
+main > * {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 15%;
+}
 .main-content-container {
+    flex-shrink: 2;
+    flex-grow: 3;
+    flex-basis: 60%;
+    background-color: rgb(143, 200, 204);
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 860px) {
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+}
+
+
+.main-content-container  *{ 
+    background-color: rgb(143, 200, 204);
 }
 
 .assets-container {
@@ -24,7 +46,6 @@ body {
 }
 
 .images-container {
-    background-color: red;
     display: flex;
     height: auto;
     width: auto;
@@ -33,7 +54,7 @@ body {
 
 .icons-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -58,26 +79,39 @@ body {
 }
 
 .schedulings-container {
-    border: 5px solid black;
+    max-width: inherit;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-width: 1000px
 }
 
 h1 {
     text-align: center;
 }
 
-img {
-    width: 10%;
+.square-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.square-icons > *{
+    width: 20%;
     height: auto;
     object-fit: cover;
 }
 
-.big{
-    width: 50%;
+.big-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.big-icons > *{
+    width: 75%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -88,4 +122,39 @@ img {
     .big{
         width: 400px;
     }
+
+}
+
+.agendamento {
+    padding: 5px 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    outline:none;
+    background-color: rgb(61, 34, 161);
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(40, 16, 128);
+}
+
+.zapzap {
+    border-radius: 50%;
+    object-fit: cover;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+.zapzap{
+    width: 100px;
+}
 }
