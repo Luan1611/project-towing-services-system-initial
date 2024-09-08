@@ -82,7 +82,7 @@ img {
 
 @media only screen and (max-width: 480px) {
     img {
-      width: 100px;
+        width: 100px;
     }
 
     .big{
