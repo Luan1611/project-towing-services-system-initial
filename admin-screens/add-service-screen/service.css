@@ -66,7 +66,6 @@ p {
     flex-direction: row;
 }
 
-.card {
-    width: 500px;
-    height: 100px;
+#add-bt {
+    height: 100%;
 }
